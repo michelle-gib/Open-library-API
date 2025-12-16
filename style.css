@@ -1,0 +1,162 @@
+:root{
+  --bg:#f4f4f4;
+  --card:#fff8f0;
+  --card-weak:#fff3e0;
+  --accent:#b28a56;
+  --accent-dark:#977345;
+  --muted:#777;
+}
+
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  font-family:"Segoe UI", Arial, sans-serif;
+  background:var(--bg);
+  color:#222;
+}
+
+/* =========================
+STARTSEITE
+========================= */
+.center-page{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.center-box{
+  max-width:520px;    
+  width:100%;
+  padding:20px;
+}
+
+.center-box .card{
+  padding:32px;       
+}
+
+.center-box .btn{
+  font-size:1.1rem;   
+  padding:14px;
+}
+
+.center-box .subtitle{
+  margin-bottom:24px; 
+}
+
+/* =========================
+  STANDARD LAYOUT (REST BLEIBT GLEICH)
+========================= */
+
+.container{
+  max-width:1100px;
+  margin:30px auto;
+  padding:20px;
+}
+
+.topbar{
+  margin-bottom:18px;
+  text-align:center;
+}
+.topbar h1{
+  margin:0;
+  font-size:2.2rem;
+  color:#111;
+}
+.topbar .subtitle{
+  margin-top:6px;
+  color:var(--muted);
+}
+
+.card{
+  background:var(--card);
+  border-radius:10px;
+  box-shadow:0 6px 18px rgba(30,20,10,.06);
+  padding:18px;
+  margin-bottom:18px;
+  text-align:center;
+}
+
+.form-vertical label{
+  display:block;
+  margin-top:10px;
+  font-weight:600;
+}
+.form-vertical input,
+.form-vertical select{
+  width:100%;
+  padding:10px;
+  margin-top:6px;
+  border-radius:8px;
+  border:1px solid #ddd;
+}
+
+.btn{
+  width:100%;
+  padding:12px;
+  margin-top:14px;
+  background:var(--accent);
+  color:#fff;
+  border:none;
+  border-radius:8px;
+  font-weight:700;
+  cursor:pointer;
+}
+.btn:hover{background:var(--accent-dark);}
+
+.search-card{
+  max-width:640px;
+  margin:0 auto 20px;
+}
+
+.results-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(180px,1fr));
+  gap:18px;
+  margin-top:18px;
+}
+
+.book-card{
+  background:var(--card-weak);
+  border-radius:10px;
+  box-shadow:0 6px 14px rgba(0,0,0,.06);
+  padding:12px;
+  text-align:center;
+}
+
+.book-card img{
+  width:100%;
+  height:230px;
+  object-fit:cover;
+  border-radius:6px;
+}
+
+.book-link{
+  color:var(--accent);
+  font-weight:700;
+  text-decoration:none;
+}
+
+.suggestions{
+  list-style:none;
+  padding:0;
+  margin:6px 0 0;
+  background:#fff;
+  border:1px solid #ddd;
+  border-radius:8px;
+  max-height:220px;
+  overflow-y:auto;
+}
+
+.suggestions li{
+  padding:8px 10px;
+  cursor:pointer;
+}
+.suggestions li:hover{
+  background:#f4f4f4;
+}
+
+.error-msg{
+  color:#b00020;
+  font-weight:600;
+}
