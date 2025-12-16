@@ -27,7 +27,7 @@ $('bookSearchForm')?.addEventListener('submit', async e => {
   }
 
   if (year && year > 2025) {
-    msg.textContent = "Bitte ein Jahr bis maximal 2025 eingeben.";
+    msg.textContent = "Bitte Jahr bis maximal 2025 wehlen.";
     return;
   }
 
@@ -56,7 +56,7 @@ function renderBooks(docs){
   container.innerHTML = '';
 
   if (!docs.length) {
-    msg.textContent = "Zu deiner Suche wurden keine Bücher gefunden.";
+    msg.textContent = "Keine Bücher für diese Suche gefunden.";
     return;
   }
 
@@ -103,11 +103,11 @@ input?.addEventListener('input', async () => {
 });
 
 /* =========================
-  Genre Dropdown (statisch + stabil)
+  Genre Dropdown
 ========================= */
 const genres = [
   "Fantasy","Science Fiction","Romance","Thriller","Horror",
-  "History","Biography","Children","Mystery","Poetry"
+  "History","Biography","Mystery","Poetry"
 ];
 
 const genreSelect = $('genre');
@@ -117,3 +117,17 @@ genres.forEach(g => {
   opt.textContent = g;
   genreSelect.appendChild(opt);
 });
+
+// =========================
+// Erscheinungsjahr Dropdown
+// =========================
+const yearSelect = $('year');
+if (yearSelect) {
+  const currentYear = 2025;
+  for (let y = currentYear; y >= 1600; y--) {
+    const opt = document.createElement('option');
+    opt.value = y;
+    opt.textContent = y;
+    yearSelect.appendChild(opt);
+  }
+}
