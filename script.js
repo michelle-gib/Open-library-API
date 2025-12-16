@@ -4,14 +4,14 @@ const escapeHtml = s => s.replace(/[&<>"']/g, m =>
 );
 
 /* =========================
-   Startbutton
+  Startbutton
 ========================= */
 $('guestBtn')?.addEventListener('click', () => {
   window.location.href = 'search.html';
 });
 
 /* =========================
-   Buchsuche
+  Buchsuche
 ========================= */
 $('bookSearchForm')?.addEventListener('submit', async e => {
   e.preventDefault();
@@ -47,7 +47,7 @@ $('bookSearchForm')?.addEventListener('submit', async e => {
 });
 
 /* =========================
-   Anzeige
+  Anzeige
 ========================= */
 function renderBooks(docs){
   const container = $('results');
@@ -79,7 +79,7 @@ function renderBooks(docs){
 }
 
 /* =========================
-   Autocomplete
+  Autocomplete
 ========================= */
 const input = $('searchTerm');
 const box = $('suggestions');
@@ -103,7 +103,7 @@ input?.addEventListener('input', async () => {
 });
 
 /* =========================
-   Genre Dropdown (statisch + stabil)
+  Genre Dropdown (statisch + stabil)
 ========================= */
 const genres = [
   "Fantasy","Science Fiction","Romance","Thriller","Horror",
