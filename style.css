@@ -124,11 +124,21 @@ STARTSEITE
   text-align:center;
 }
 
-.book-card img{
+/* Cover klickbar + Hover-Effekt */
+.book-card a {
+  display: block;
+}
+
+.book-card a img {
   width:100%;
   height:230px;
   object-fit:cover;
   border-radius:6px;
+  transition: transform 0.25s ease;
+}
+
+.book-card a:hover img {
+  transform: scale(1.05);
 }
 
 .book-link{
