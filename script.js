@@ -124,7 +124,7 @@ genres.forEach(g => {
 const yearSelect = $('year');
 if (yearSelect) {
   const currentYear = 2025;
-  for (let y = currentYear; y >= 1600; y--) {
+  for (let y = currentYear; y >= 1800; y--) {
     const opt = document.createElement('option');
     opt.value = y;
     opt.textContent = y;
