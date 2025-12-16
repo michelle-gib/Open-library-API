@@ -67,7 +67,8 @@ function renderBooks(docs){
 
     container.innerHTML += `
       <div class="book-card">
-        <img src="${cover}">
+        <a href="https://openlibrary.org${d.key}" target="_blank">
+        <img src="${cover}" alt="Buchcover">
         <h3>${escapeHtml(d.title || 'Kein Titel')}</h3>
         <p>${escapeHtml(d.author_name?.join(', ') || 'Unbekannt')}</p>
         <p>Jahr: ${d.first_publish_year || 'n/a'}</p>
