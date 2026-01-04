@@ -1,4 +1,5 @@
-:root{
+/* Algemeine Farbdefinitionen */
+  :root{
   --bg:#f4f4f4;
   --card:#fff8f0;
   --card-weak:#fff3e0;
@@ -15,9 +16,7 @@ body{
   color:#222;
 }
 
-/* =========================
-STARTSEITE
-========================= */
+/* STARTSEITE */
 .center-page{
   min-height:100vh;
   display:flex;
@@ -44,9 +43,7 @@ STARTSEITE
   margin-bottom:24px; 
 }
 
-/* =========================
-  STANDARD LAYOUT (REST BLEIBT GLEICH)
-========================= */
+/* Algemeines LAYOUT */
 
 .container{
   max-width:1100px;
@@ -54,6 +51,7 @@ STARTSEITE
   padding:20px;
 }
 
+/* HEADER */
 .topbar{
   margin-bottom:18px;
   text-align:center;
@@ -68,6 +66,7 @@ STARTSEITE
   color:var(--muted);
 }
 
+/* Boxen */
 .card{
   background:var(--card);
   border-radius:10px;
@@ -77,6 +76,7 @@ STARTSEITE
   text-align:center;
 }
 
+/* FORMULARE */
 .form-vertical label{
   display:block;
   margin-top:10px;
@@ -91,6 +91,7 @@ STARTSEITE
   border:1px solid #ddd;
 }
 
+/* BUTTONS */
 .btn{
   width:100%;
   padding:12px;
@@ -102,7 +103,7 @@ STARTSEITE
   font-weight:700;
   cursor:pointer;
 }
-.btn:hover{background:var(--accent-dark);}
+.btn:hover{background:var(--accent-dark);} /* Hover-Effekt */
 
 .search-card{
   max-width:640px;
@@ -116,6 +117,7 @@ STARTSEITE
   margin-top:18px;
 }
 
+/* BUCHKARTEN */
 .book-card{
   background:var(--card-weak);
   border-radius:10px;
@@ -124,7 +126,7 @@ STARTSEITE
   text-align:center;
 }
 
-/* Cover klickbar + Hover-Effekt */
+/* COVER KLICKBAR und HOVER */
 .book-card a {
   display: block;
 }
@@ -141,10 +143,12 @@ STARTSEITE
   transform: scale(1.05);
 }
 
+/* BUCHLINK */
 .book-link{
   color:var(--accent);
   font-weight:700;
   text-decoration:none;
+  font-color:var(--muted)
 }
 
 .suggestions{
@@ -166,6 +170,7 @@ STARTSEITE
   background:#f4f4f4;
 }
 
+/* FEHLERMELDUNGEN */
 .error-msg{
   color:#b00020;
   font-weight:600;
