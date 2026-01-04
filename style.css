@@ -129,7 +129,7 @@ body{
 /* COVER KLICKBAR und HOVER */
 .book-card a {
   display: block;
-
+  color: #222;
 }
 
 .book-card a img {
@@ -146,6 +146,7 @@ body{
 
 /* BUCHLINK */
 .book-link{
+  color: #222;
   font-weight:700;
   text-decoration:none;
 }
