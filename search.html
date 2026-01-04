@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+    <!-- Zeichencodierung für Umlaute & Sonderzeichen -->
   <meta charset="utf-8">
+    <!-- Responsive Darstellung für Mobile & Desktop -->
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Open library API – Suche</title>
+    <!-- Einbindung der Styles -->
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,6 +17,7 @@
       <p class="subtitle">Suche Bücher</p>
     </header>
 
+        <!-- Suchformular in einer Card -->
     <section class="search-card card">
       <form id="bookSearchForm" class="form-vertical">
         <label for="searchTerm">Titel oder Autor*</label>
@@ -33,16 +37,19 @@
         <label for="language">Sprache</label>
         <input id="language" type="text" placeholder="z. B. eng / de">
 
+        <!-- Meldungen für Fehler oder Hinweise Wird per JavaScript gesetzt -->
         <p id="searchMessage" class="error-msg"></p>
         <button type="submit" class="btn">Bücher suchen</button>
       </form>
     </section>
 
+        <!-- Bereich für die Suchergebnisse -->
     <section id="resultsSection">
       <div id="results" class="results-grid"></div>
     </section>
   </div>
 
+    <!-- Einbindung der JavaScript-Datei -->
   <script src="script.js"></script>
 </body>
     <footer class="info">
