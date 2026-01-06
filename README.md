@@ -89,5 +89,3 @@ https://openlibrary.org/search.json?q=SUCHBEGRIFF
 #### 2. Buchcover
 ```text
 https://covers.openlibrary.org/b/id/COVER_ID-L.jpg
-
-
